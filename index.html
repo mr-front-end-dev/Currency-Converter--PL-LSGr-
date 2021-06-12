@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Przelicznik walut</title>
+  <link rel="icon" href="icon/expense.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/container.css">
+  <link rel="stylesheet" href="css/section.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,300&display=swap"
+    rel="stylesheet">
+</head>
+<body class="body">
+  <div class="container">
+    <a class="button--link" href="https://mr-front-end-dev.github.io/Currency-Converter--EN-LSGr-/"><button class="button">EN</button></a>
+    <a class="button--link" href="https://mr-front-end-dev.github.io/Currency-Converter--RU-LSGr-/"><button class="button">RU</button></a>
+    <a class="button--link" href="https://mr-front-end-dev.github.io/Currency-Converter--DE-LSGr-/"><button class="button">DE</button></a>
+    <a class="button--link" href="https://mr-front-end-dev.github.io/Currency-Converter--ES-LSGr-/"><button class="button">ES</button></a>
+    <a class="button--link" href="https://mr-front-end-dev.github.io/Currency-Converter--UA-LSGr-/"><button class="button">UA</button></a>
+    <a class="button--link" href="https://mr-front-end-dev.github.io/Currency-Converter--PL-LSG-/"><button class="button button--lightslategrey">🌗</button></a>
+    <form class="form js-form">
+      <h1 class="form__header">Przelicznik walut</h1>
+      <p>
+        <p class="form__paragraphWarning">Konwersja z PLN (PL) <span class="form__span--asterisk">*</span></p>
+        <label>
+          <span class="form__labelText form__labelText--lightseagreen">Kwota w <span
+              class="form__span--asterisk">*</span> :</span>
+          <input type="number" placeholder="Enter the amonumt in PLN" class="form__field js-amount" min="0" max="100000"
+            step="0.01" required>
+        </label>
+      </p>
+      <p>
+        <label>
+          <span class="form__labelText">Waluta:</span>
+          <select class="form__field js-currency">
+            <option value="THB">1 Bat tajlandzki (THB)</option>
+            <option value="USD">1 Dolar amerykański (USD)</option>
+            <option value="AUD">1 Dolar australijski (AUD)</option>
+            <option value="HKD">1 Dolar hongkoński (HKD)</option>
+            <option value="CAD">1 Dolar kanadyjski (CAD)</option>
+            <option value="NZD">1 Dolar nowozelandzki (NZD)</option>
+            <option value="SGD">1 Dolar singapurski (SGD)</option>
+            <option value="EUR">1 Europejskie Euro (EUR)</option>
+            <option value="(* 100) HUF">100 Forint węgierski (HUF)</option>
+            <option value="CHF">1 Frank szwajcarski (CHF)</option>
+            <option value="GBP">1 Funt brytyjski (GBP)</option>
+            <option value="UAH">1 Hrywna ukraińska (UAH)</option>
+            <option value="(* 100) JPY">100 Japoński jen (JPY)</option>
+            <option value="CZK">1 Korona czeska (CZK)</option>
+            <option value="DKK">1 Korona duńska (DKK)</option>
+            <option value="(* 100) ISK">100 Korona islandzka (ISK)</option>
+            <option value="NOK">1 Korona norweska (NOK)</option>
+            <option value="SEK">1 Korona szwedzka (SEK)</option>
+            <option value="HRK">1 Kuna chorwacka (HRK)</option>
+            <option value="RON">1 Lej rumuński (RON)</option>
+            <option value="BGN">1 Lew bułgarski (BGN)</option>
+            <option value="TRY">1 Lira turecka (TRY)</option>
+            <option value="ILS">1 Nowy izraelski szekel (ILS)</option>
+            <option value="(* 100) CLP">100 Peso chilijskie (CLP)</option>
+            <option value="PHP">1 Peso filipińskie (PHP)</option>
+            <option value="MXN">1 Peso meksykańskie (MXN)</option>
+            <option value="ZAR">1 Republika Południowej Afryki Rand (ZAR)</option>
+            <option value="BRL">1 Real brazylijski (BRL)</option>
+            <option value="MYR">1 Ringgit malezyjski (MYR)</option>
+            <option value="RUB">1 Rubel rosyjski (RUB)</option>
+            <option value="(* 10000) IDR">10000 Rupia indonezyjska (IDR)</option>
+            <option value="(* 100) INR">100 Rupia indyjska (INR)</option>
+            <option value="(* 100) KRW">100 Won południowokoreański (KRW)</option>
+            <option value="CNY">1 Chiński juan renminbi (CNY)</option>
+            <option value="XDR">1 SDR (MFW)</option>
+          </select>
+        </label>
+      </p>
+      <p>
+        <button class="form__buttonText">Przelicz!</button>
+      </p>
+      <p class="form__info">Stawki pochodzą z tabeli nr 002/A/NBP/2021 z dnia 2020-01-05</p>
+      <!-- UPDATE with time -->
+      <p class="form__result js-result"></p>
+      <div class="underline--seagreen"></div>
+    </form>
+  </div>
+  <script defer src="js/script.js"></script>
+</body>
+
+</html>
